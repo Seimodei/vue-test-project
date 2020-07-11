@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+@mixin mQ ($arg) {
+  @media (max-width: #{$arg}) {
+    @content;
+  }
+}
+
+@mixin chartWrapperDefault {
+  .wrapper {
+    width: 1000px;
+    background-color: #fff;
+  }
+}
+
+@mixin loader {
+  .logo {      
+    span {
+      display: block;
+      color: $purple-color;
+
+      &:nth-child(1) {
+        font-weight: 700;
+        font-family: $logo-font;
+        font-size: 200%;
+      }
+
+      &:nth-child(2) {
+        font-weight: 300;
+        font-size: 150%;
+        margin-top: -15px;
+      }
+    }
+  }
+}
