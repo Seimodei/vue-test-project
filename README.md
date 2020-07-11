@@ -1,24 +1,33 @@
-# vue-test
+# Northern Gas & Power Vue Test Project
 
-## Project setup
+## Project Setup
+To run this project locally, first clone the repository locally and then run the following command:
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## Development Setup
+After running the above command to install the node modules, in order to run the app locally on your development server, run the following command:
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+## Production Setup
+To test and see how the app performs for production, run:
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Project Details
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Dependencies
+
+This app has a couple of dependencies for development and they include the following:
+
+- Axios: Used for making the API call to the endpoint to get the chart data
+- Vuetify: Used for rapid styling and general layout of the app
+- ChartJs: Chart library used for displaying and visualizing the various chart data
+- GSAP: Lightweight animation library used for implementing the drag feature of the charts
